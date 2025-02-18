@@ -1,17 +1,40 @@
 {
-  "name": "Tawaswl Network",
+  "id": "tawaswl-network-pwa",
+  "name": "Tawaswl Network - شبكة تواصل",
   "short_name": "Tawaswl",
-  "description": "شبكة تواصل لخدمات الإنترنت",
-  "start_url": "https://tawaswl.github.io/tawaswl-network/",
-  "scope": "https://tawaswl.github.io/tawaswl-network/",
+  "description": "شبكة تواصل لخدمات الإنترنت - خدمات اتصال سريعة وموثوقة في سوريا. تقدم خدمات الإنترنت والدعم الفني على مدار الساعة مع ضمان أفضل جودة اتصال",
+  "start_url": "./index.html",
+  "scope": ".",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "orientation": "any",
+  "background_color": "#2196f3",
   "theme_color": "#2196f3",
-  "orientation": "portrait-primary",
   "dir": "rtl",
   "lang": "ar",
-  "prefer_related_applications": false,
-  "categories": ["utilities", "social"],
+  "categories": ["utilities", "social", "business", "networking"],
+  "launch_handler": {
+    "client_mode": ["focus-existing", "auto"]
+  },
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "screenshots": [
+    {
+      "src": "screenshots/desktop.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "الصفحة الرئيسية لشبكة تواصل - سطح المكتب"
+    },
+    {
+      "src": "screenshots/mobile.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "الصفحة الرئيسية لشبكة تواصل - الجوال"
+    }
+  ],
   "icons": [
     {
       "src": "icons/icon-72x72.png",
