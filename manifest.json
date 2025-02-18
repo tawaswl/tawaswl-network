@@ -1,9 +1,9 @@
 {
-  "id": "tawaswl-network-pwa",
-  "name": "Tawaswl Network - شبكة تواصل",
-  "short_name": "Tawaswl",
-  "description": "شبكة تواصل لخدمات الإنترنت - خدمات اتصال سريعة وموثوقة في سوريا. تقدم خدمات الإنترنت والدعم الفني على مدار الساعة مع ضمان أفضل جودة اتصال",
-  "start_url": "./index.html",
+  "id": "tawaswl-app",
+  "name": "شبكة تواصل لخدمات الإنترنت",
+  "short_name": "تواصل نت",
+  "description": "شبكة تواصل - خدمات إنترنت سريعة وموثوقة في سوريا مع دعم فني على مدار الساعة",
+  "start_url": ".",
   "scope": ".",
   "display": "standalone",
   "display_override": ["window-controls-overlay", "standalone"],
@@ -12,7 +12,7 @@
   "theme_color": "#2196f3",
   "dir": "rtl",
   "lang": "ar",
-  "categories": ["utilities", "social", "business", "networking"],
+  "categories": ["utilities", "social"],
   "launch_handler": {
     "client_mode": ["focus-existing", "auto"]
   },
@@ -40,7 +40,7 @@
       "src": "icons/icon-72x72.png",
       "sizes": "72x72",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
       "src": "icons/icon-192x192.png",
@@ -58,7 +58,7 @@
   "shortcuts": [
     {
       "name": "الرئيسية",
-      "url": "/index.html",
+      "url": ".",
       "icons": [{ "src": "icons/icon-72x72.png", "sizes": "72x72" }]
     }
   ]
