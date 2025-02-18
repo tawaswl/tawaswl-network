@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل لخدمات الإنترنت</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="language-switch">
+                <button onclick="changeLanguage('ar')" class="lang-btn">عربي</button>
+                <button onclick="changeLanguage('en')" class="lang-btn">English</button>
+                <button onclick="changeLanguage('tr')" class="lang-btn">Türkçe</button>
+            </div>
+            <div class="theme-switch">
+                <button id="themeToggle" class="theme-btn">
+                    <span class="light-icon">☀️</span>
+                    <span class="dark-icon">🌙</span>
+                </button>
+            </div>
+            <div class="datetime" id="datetime"></div>
+        </header>
+
+        <main>
+            <div class="logo">
+                <img src="logo.png" alt="تواصل لخدمات الإنترنت" id="logo">
+            </div>
+            
+            <div class="content-container">
+                <h1 class="welcome-text" data-translate="welcome">مرحباً بكم في تواصل لخدمات الإنترنت</h1>
+                <button onclick="window.location.href='http://t.com'" class="redirect-btn" data-translate="enter">
+                    الدخول إلى الموقع
+                </button>
+                <p class="slogan" data-translate="slogan">خليك على تواصل مع شبكة تواصل</p>
+                <div class="contact-info">
+                    <a href="mailto:Tawaswl@outlook.com" class="contact-btn email-btn">
+                        <i class="fas fa-envelope"></i>
+                        Tawaswl@outlook.com
+                    </a>
+                    <a href="https://wa.me/963987512721" class="contact-btn whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        تواصل عبر واتساب
+                    </a>
+                </div>
+                <button onclick="openSettings()" class="settings-btn" data-translate="settings">
+                    <i class="fas fa-cog"></i>
+                    الإعدادات
+                </button>
+                <button onclick="exitApp()" class="exit-btn" data-translate="exit">خروج</button>
+                <footer class="footer">
+                    <p data-translate="developer">تطوير حامد هزاع</p>
+                    <p class="copyright" data-translate="copyright">جميع الحقوق محفوظة © 2025</p>
+                </footer>
+            </div>
+        </main>
+
+        <!-- إضافة نافذة الإعدادات -->
+        <div id="settingsModal" class="modal">
+            <div class="modal-content">
+                <h2 data-translate="settings">الإعدادات</h2>
+                <div class="settings-form">
+                    <label data-translate="websiteUrl">عنوان الموقع:</label>
+                    <input type="url" id="websiteUrl" placeholder="https://example.com">
+                    <div class="modal-buttons">
+                        <button onclick="saveSettings()" class="save-btn" data-translate="save">حفظ</button>
+                        <button onclick="closeSettings()" class="cancel-btn" data-translate="cancel">إلغاء</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

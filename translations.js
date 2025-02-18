@@ -1,0 +1,53 @@
+const translations = {
+    ar: {
+        welcome: "مرحباً بكم في تواصل لخدمات الإنترنت",
+        enter: "الدخول إلى الموقع",
+        slogan: "خليك على تواصل مع شبكة تواصل",
+        developer: "تطوير حامد هزاع",
+        alertMessage: "سيتم توجيهك إلى صفحة تسجيل البطاقة. هل تريد المتابعة؟",
+        whatsappContact: "تواصل عبر واتساب",
+        exit: "خروج",
+        exitConfirm: "هل أنت متأكد من أنك تريد الخروج من البرنامج؟",
+        settings: "الإعدادات",
+        websiteUrl: "عنوان الموقع",
+        save: "حفظ",
+        cancel: "إلغاء",
+        urlSaved: "تم حفظ عنوان الموقع بنجاح",
+        enterUrl: "أدخل عنوان الموقع الجديد",
+        copyright: "جميع الحقوق محفوظة © 2025"
+    },
+    en: {
+        welcome: "Welcome to Tawaswl Internet Services",
+        enter: "Enter Website",
+        slogan: "Stay Connected with Tawaswl Network",
+        developer: "Developed by Hamed Hazaa",
+        alertMessage: "You will be redirected to the card registration page. Do you want to continue?",
+        whatsappContact: "Contact via WhatsApp",
+        exit: "Exit",
+        exitConfirm: "Are you sure you want to exit the application?",
+        settings: "Settings",
+        websiteUrl: "Website URL",
+        save: "Save",
+        cancel: "Cancel",
+        urlSaved: "Website URL saved successfully",
+        enterUrl: "Enter new website URL",
+        copyright: "All Rights Reserved © 2025"
+    },
+    tr: {
+        welcome: "Tawaswl İnternet Hizmetlerine Hoş Geldiniz",
+        enter: "Siteye Gir",
+        slogan: "Tawaswl Ağı ile bağlantıda kalın",
+        developer: "Geliştirici: Hamed Hazaa",
+        alertMessage: "Kart kayıt sayfasına yönlendirileceksiniz. Devam etmek istiyor musunuz?",
+        whatsappContact: "WhatsApp ile iletişime geç",
+        exit: "Çıkış",
+        exitConfirm: "Uygulamadan çıkmak istediğinizden emin misiniz?",
+        settings: "Ayarlar",
+        websiteUrl: "Website URL",
+        save: "Kaydet",
+        cancel: "İptal",
+        urlSaved: "Website URL başarıyla kaydedildi",
+        enterUrl: "Yeni website URL'sini girin",
+        copyright: "Tüm Hakları Saklıdır © 2025"
+    }
+};
