@@ -130,6 +130,20 @@ document.addEventListener('DOMContentLoaded', () => {
     updateWhatsAppText();
 });
 
+// تتبع أخطاء التثبيت
+window.addEventListener('error', function(event) {
+    console.error('خطأ:', event.message);
+    console.error('المصدر:', event.filename);
+    console.error('السطر:', event.lineno);
+    console.error('العمود:', event.colno);
+    console.error('الخطأ الكامل:', event.error);
+});
+
+// تتبع حالة التثبيت
+window.addEventListener('appinstalled', (event) => {
+    console.log('✅ تم تثبيت التطبيق بنجاح');
+});
+
 // إغلاق النافذة عند النقر خارجها
 window.onclick = function(event) {
     const modal = document.getElementById('settingsModal');
