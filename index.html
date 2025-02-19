@@ -30,6 +30,10 @@
                 </button>
             </div>
             <div class="datetime" id="datetime"></div>
+            <button id="installButton" class="install-btn" style="display: none;">
+                <i class="fas fa-download"></i>
+                تثبيت التطبيق
+            </button>
         </header>
 
         <main>
@@ -91,6 +95,23 @@
                     .catch(err => console.log('❌ خطأ في تسجيل Service Worker:', err));
             });
         }
+
+        let deferredPrompt;
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            document.getElementById('installButton').style.display = 'flex';
+        });
+
+        document.getElementById('installButton').addEventListener('click', async () => {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                const { outcome } = await deferredPrompt.userChoice;
+                console.log(`User response: ${outcome}`);
+                deferredPrompt = null;
+                document.getElementById('installButton').style.display = 'none';
+            }
+        });
     </script>
 </body>
 </html>
