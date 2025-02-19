@@ -1,4 +1,4 @@
-const CACHE_NAME = 'tawaswl-v5';
+const CACHE_NAME = 'tawaswl-v6';
 const urlsToCache = [
   './',
   './index.html',
