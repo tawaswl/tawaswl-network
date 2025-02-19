@@ -1,4 +1,4 @@
-const CACHE_NAME = 'tawaswl-v2';
+const CACHE_NAME = 'tawaswl-v3';
 const urlsToCache = [
   '.',
   './index.html',
@@ -8,9 +8,7 @@ const urlsToCache = [
   './icons/icon-72x72.png',
   './icons/icon-192x192.png',
   './icons/icon-512x512.png',
-  './logo.png',
-  'https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap',
-  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'
+  './logo.png'
 ];
 
 self.addEventListener('install', event => {
